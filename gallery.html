@@ -18,7 +18,25 @@
 		<![endif]-->
 
 	</head>
+	<style>
+		.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -5px; /* Adjust margin to remove extra space */
+  }
 
+  .gallery-item {
+    flex: 0 0 calc(20% - 10px); /* Adjust width for 5 items in a row with gap */
+    margin: 5px; /* Add margin for spacing between items */
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+	</style>
 
 	<body>
 
@@ -51,12 +69,17 @@
 				</div>
 			</header>
 
-			<main class="main-content">
+			<!-- <main class="main-content"> -->
 				
-<h1>for gallery ,now pending</h1>
+				<div class="gallery">
+					<div><img class="gallery-item" src="images/gallery1.jpg" alt="Landscape 1"></div>
+					<div><img class="gallery-item" src="images/gallery2.jpg" alt="Landscape 2"></div>
+					<div><img class="gallery-item" src="images/gallery3.jpg" alt="Landscape 3"></div>
+					<div><img class="gallery-item" src="images/gallery4.jpg" alt="Portrait 1"></div>
+					<!-- <div><img class="gallery-item" src="images/gallery5.jpg" alt="Landscape 4"></div> -->
+				</div>
 
-
-			</main>
+			<!-- </main> -->
 
 			<footer class="site-footer">
 				<div class="container">
@@ -81,7 +104,7 @@
 						<div class="col-md-6">
 							<div class="widget">
 								<h3 class="widget-title">Social Media</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident et praesentium </p>
+								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident et praesentium </p> -->
 								<div class="social-links">
 									<a href="#"><i class="fa fa-facebook"></i></a>
 									<a href="#"><i class="fa fa-twitter"></i></a>
